@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icon.png" width="128" height="128" alt="Manwe">
+  <img src="assets/manwe-icon-beta.webp" width="128" height="128" alt="Manwe">
 </p>
 
 <h1 align="center">Not one AI opinion — six experts arguing with citations.</h1>
