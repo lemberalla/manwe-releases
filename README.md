@@ -37,4 +37,6 @@ This is a beta — please report bugs and share ideas:
 
 ---
 
-*Made by Oncel Cebeci · a tiny things app*
+<p align="center">
+  Made by <a href="https://tinythings.app">Tiny Things</a>
+</p>
