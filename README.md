@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/icon.png" width="128" height="128" alt="Manwe">
+</p>
+
 <h1 align="center">Not one AI opinion — six experts arguing with citations.</h1>
 
 <p align="center">
@@ -12,6 +16,14 @@
 ---
 
 Describe a decision or question. Manwe searches PubMed, arXiv, Semantic Scholar, and 6 other real sources, assembles a panel of AI advisors — specialists, a contrarian, and an auditor — and runs a multi-round debate. You get a structured report with predictions, confidence scores, evidence, risks, and a concrete action plan. Not a chat response.
+
+<p align="center">
+  <img src="assets/screenshot-1.png" width="100%" alt="The Panel — advisors debating with unique perspectives">
+</p>
+
+<p align="center">
+  <img src="assets/screenshot-2.png" width="100%" alt="Structured report with predictions and confidence scores">
+</p>
 
 ## Try asking
 
