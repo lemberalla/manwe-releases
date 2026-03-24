@@ -13,8 +13,8 @@ Head to [Releases](https://github.com/lemberalla/manwe-releases/releases) to gra
 ## What It Does
 
 - Assembles 4-6 expert advisors with unique perspectives for your question
-- Runs 8-round debates where advisors argue, challenge, and fact-check each other
-- Searches 9 real sources (PubMed, Semantic Scholar, arXiv, Wikipedia, and more)
+- Runs multi-round debates where advisors argue, challenge, and fact-check each other
+- Searches mass databases and the internet (PubMed, Semantic Scholar, arXiv, Wikipedia, and more)
 - Delivers structured reports with predictions, confidence scores, and action plans
 - Detects knowledge gaps mid-debate and recruits guest experts
 - Lets you inject events and interview agents during the simulation
