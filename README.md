@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/lemberalla/manwe-releases/releases/download/v0.1.0/Manwe-0.1.0.dmg"><strong>Download the Beta</strong></a> · <a href="https://discord.gg/Nz6RExEpSD">Join the Discord</a> · <a href="https://tinythings.app/manwe">Website</a>
+  <a href="https://github.com/lemberalla/manwe-releases/releases/latest"><strong>Download the Beta</strong></a> · <a href="https://discord.gg/Nz6RExEpSD">Join the Discord</a> · <a href="https://tinythings.app/manwe">Website</a>
 </p>
 
 ---
@@ -55,11 +55,29 @@ Manwe runs Qwen3 locally via MLX on Apple Silicon. Download a model during onboa
 
 ## Install
 
-1. Download [**Manwe-0.1.0.dmg**](https://github.com/lemberalla/manwe-releases/releases/download/v0.1.0/Manwe-0.1.0.dmg)
+1. Download the latest DMG from [**Releases**](https://github.com/lemberalla/manwe-releases/releases/latest)
 2. Open the DMG and drag Manwe to Applications
 3. Launch — onboarding guides you through model setup
 
 **Requires macOS 14.0+ and Apple Silicon (M1 or later).**
+
+## Changelog
+
+### v0.1.1
+- **Cleaner search results** — blocked 45+ noisy domains (social media, memes, AI tools, aggregators), tightened Wikipedia relevance filter, added global keyword relevance check across all sources
+- **Time-aware advisors** — agents and reports now know the current year, no more stale 2025 references
+- **CORE API stability** — fixed rate limiting that caused timeouts during research phase
+- **"How to get the best results" guide** — new in-app guide explaining prompts, stakes, seed data, and how to get the most from your simulations
+- **Sparkle auto-updates** — the app now checks for updates automatically
+
+### v0.1.0
+- Initial beta release
+- Multi-agent debate engine with 4-6 advisors per simulation
+- 9 research sources (PubMed, Semantic Scholar, arXiv, OpenAlex, CORE, Wikipedia, BLS, GDELT, DuckDuckGo)
+- Local models (Qwen3 8B, Qwen3.5 9B) via MLX on Apple Silicon
+- Claude Code CLI integration (Haiku, Sonnet, Opus)
+- Progressive search, guest experts, anti-hallucination, continue chains
+- Signed, notarized, stapled DMG distribution
 
 ## Feedback
 
