@@ -15,7 +15,7 @@
 
 ---
 
-Describe a decision or question. Manwe searches PubMed, arXiv, Semantic Scholar, and 6 other real sources, assembles a panel of AI advisors — specialists, a contrarian, and an auditor — and runs a multi-round debate. You get a structured report with predictions, confidence scores, evidence, risks, and a concrete action plan. Not a chat response.
+Describe a decision or question. Manwe searches PubMed, arXiv, Semantic Scholar, and 9 other real sources, assembles a panel of AI advisors — specialists, a contrarian, and an auditor — and runs a multi-round debate. You get a structured report with predictions, confidence scores, evidence, risks, and a concrete action plan. Not a chat response.
 
 <p align="center">
   <img src="assets/screenshot-1.png" width="100%" alt="The Panel — advisors debating with unique perspectives">
@@ -46,7 +46,7 @@ Manwe runs Qwen3 locally via MLX on Apple Silicon. Download a model during onboa
 
 ## What makes it different
 
-- **Real research, not vibes** — searches 9 sources (PubMed, Semantic Scholar, arXiv, OpenAlex, CORE, Wikipedia, BLS, GDELT, DuckDuckGo) before the debate starts
+- **Real research, not vibes** — searches 12 sources (PubMed, Semantic Scholar, arXiv, OpenAlex, CORE, Wikipedia, BLS, GDELT, DuckDuckGo, Hacker News, Stack Exchange, ClinicalTrials.gov) before the debate starts
 - **Advisors who actually disagree** — a contrarian stress-tests consensus, an auditor fact-checks claims mid-debate
 - **Guest experts** — Manwe detects knowledge gaps and recruits specialists on the fly
 - **You're in the room** — inject events mid-debate, interview individual agents after
@@ -63,6 +63,14 @@ Manwe runs Qwen3 locally via MLX on Apple Silicon. Download a model during onboa
 
 ## Changelog
 
+### v0.1.2
+- **3 new data sources** — Hacker News (tech discussions), Stack Exchange (lifestyle/home/career Q&A), ClinicalTrials.gov (medical trials) — 12 sources total
+- **Expanded search blocklist** — ~60 blocked domains now including quote sites, fandom wikis, e-commerce brands, gaming forums, lyrics sites
+- **Auto-scroll during simulation** — center pane follows new content as agents debate
+- **Collapsible agent cards** — cards collapse to name + role after simulation, expand on tap
+- **Interview polish** — prominent accent button, shimmer thinking indicator, close button, dark theme modal
+- **Chat persona fix** — removed bar metaphor that caused Qwen 9B to roleplay as a bartender
+
 ### v0.1.1
 - **Cleaner search results** — blocked 45+ noisy domains (social media, memes, AI tools, aggregators), tightened Wikipedia relevance filter, added global keyword relevance check across all sources
 - **Time-aware advisors** — agents and reports now know the current year, no more stale 2025 references
@@ -73,7 +81,7 @@ Manwe runs Qwen3 locally via MLX on Apple Silicon. Download a model during onboa
 ### v0.1.0
 - Initial beta release
 - Multi-agent debate engine with 4-6 advisors per simulation
-- 9 research sources (PubMed, Semantic Scholar, arXiv, OpenAlex, CORE, Wikipedia, BLS, GDELT, DuckDuckGo)
+- 9 research sources at launch (PubMed, Semantic Scholar, arXiv, OpenAlex, CORE, Wikipedia, BLS, GDELT, DuckDuckGo)
 - Local models (Qwen3 8B, Qwen3.5 9B) via MLX on Apple Silicon
 - Claude Code CLI integration (Haiku, Sonnet, Opus)
 - Progressive search, guest experts, anti-hallucination, continue chains
