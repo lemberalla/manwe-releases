@@ -63,6 +63,14 @@ Manwe runs Qwen3 locally via MLX on Apple Silicon. Download a model during onboa
 
 ## Changelog
 
+### v0.1.3
+- **Redesigned report layout** — 3-layer read: verdict card with confidence score → predictions with visual bars → action plan → evidence → risks → debate rounds
+- **Export formats** — Save as PDF, Save as Web Page (HTML), Copy as Rich Text, Copy as Markdown — all with smart filenames and branding
+- **Category-themed verdict cards** — medical (red), finance (orange/gold), tech (cyan), lifestyle (teal), career (indigo), and more
+- **New brand color** — Manwe indigo #4636FC
+- **Save Report button** — full-width glass button with category color in the verdict card
+- **Interview buttons** — frosted white glass for better contrast on dark theme
+
 ### v0.1.2
 - **3 new data sources** — Hacker News (tech discussions), Stack Exchange (lifestyle/home/career Q&A), ClinicalTrials.gov (medical trials) — 12 sources total
 - **Expanded search blocklist** — ~60 blocked domains now including quote sites, fandom wikis, e-commerce brands, gaming forums, lyrics sites
