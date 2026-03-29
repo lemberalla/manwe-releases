@@ -46,7 +46,7 @@ Manwe runs Qwen3 locally via MLX on Apple Silicon. Download a model during onboa
 
 ## What makes it different
 
-- **Real research, not vibes** — searches 12 sources (PubMed, Semantic Scholar, arXiv, OpenAlex, CORE, Wikipedia, BLS, GDELT, DuckDuckGo, Hacker News, Stack Exchange, ClinicalTrials.gov) before the debate starts
+- **Real research, not vibes** — searches 13 sources (PubMed, Semantic Scholar, arXiv, OpenAlex, CORE, Wikipedia, BLS, GDELT, DuckDuckGo, Hacker News, Stack Exchange, ClinicalTrials.gov, DOAJ) before the debate starts
 - **Advisors who actually disagree** — a contrarian stress-tests consensus, an auditor fact-checks claims mid-debate
 - **Guest experts** — Manwe detects knowledge gaps and recruits specialists on the fly
 - **You're in the room** — inject events mid-debate, interview individual agents after
@@ -62,6 +62,17 @@ Manwe runs Qwen3 locally via MLX on Apple Silicon. Download a model during onboa
 **Requires macOS 14.0+ and Apple Silicon (M1 or later).**
 
 ## Changelog
+
+### v0.1.4
+- **Adaptive simulation speed** — Quick Run rounds scale with your hardware (4-6 rounds based on available RAM)
+- **"End Debate" button** — gracefully wrap up a simulation anytime. The Auditor calls the debate to a close, agents deliver final verdicts, then the report generates. Available from round 2-3 depending on hardware.
+- **Cancel confirmation** — cancel now requires confirmation to prevent accidental data loss
+- **13th data source: DOAJ** — 12.5M peer-reviewed open access articles covering humanities, social sciences, law, and education
+- **GDELT circuit breaker** — stops wasting time on failed API calls, saves 2-4 minutes when GDELT is down
+- **Faster 9B simulations** — similarity retries skipped in late rounds where agent convergence is expected, saves 3-5 minutes
+- **Pro Run rebalanced** — default 6 rounds (was 8), max 10 (was 20)
+- **Events in reports** — surprise, planned, and injected events now visible in completed reports and all exports
+- **Updated AI engine** — mlx-swift-lm, mlx-swift, swift-transformers updated to latest with native Qwen3.5 support and performance optimizations
 
 ### v0.1.3
 - **Redesigned report layout** — 3-layer read: verdict card with confidence score → predictions with visual bars → action plan → evidence → risks → debate rounds
