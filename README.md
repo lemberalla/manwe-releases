@@ -61,6 +61,10 @@ Manwe runs Qwen3 locally via MLX on Apple Silicon. Download a model during onboa
 
 **Requires macOS 14.0+ and Apple Silicon (M1 or later).**
 
+## Changelog
+
+See [**Releases**](https://github.com/lemberalla/manwe-releases/releases) for the full version history.
+
 ## Feedback
 
 This is a beta. Things will break.
