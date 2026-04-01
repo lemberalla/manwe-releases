@@ -63,6 +63,17 @@ Manwe runs Qwen3 locally via MLX on Apple Silicon. Download a model during onboa
 
 ## Changelog
 
+### v0.2.0
+- **Future Paths** — after every simulation, Manwe generates 2-3 divergent timelines showing what happens if you take different forks. Each path is a month-by-month causal chain citing specific evidence from the debate. Then talk to your "future self" from each path — ask what surprised them, what they'd change, what happened next.
+- **CLA debate structure** — debates now descend through layers of depth. Free-form argument for most rounds, then the final two rounds surface competing worldviews and a unifying metaphor. Based on Sohail Inayatullah's Causal Layered Analysis framework.
+- **Pre-sim clarification** — chat refinement now asks structured foresight questions (prediction, fear, ideal outcome) before assembling the panel, giving agents richer context grounded in your situation.
+- **Apple-style sidebar** — replaced the icon rail with a proper sidebar showing navigation + recent sessions with verdict snippets grouped by time.
+- **Time estimates** — Pro Run button shows estimated duration based on model, round count, and hardware tier.
+- **Cancel fix** — cancelling a simulation now returns to homepage cleanly instead of getting stuck.
+- **DecisionDetector reliability** — token budget fix prevents 9B from falling back to generic categories.
+- **Token budget audit** — bumped limits across report, summaries, surprise pool, and future paths for 9B compatibility.
+- **UI polish** — fully tappable round cards, proper history tab hit targets, consistent Settings/Agent Pool layouts, sidebar toggles hidden where unnecessary, PDF disclaimer contrast improved.
+
 ### v0.1.5
 - **Smarter local models** — Qwen models now do a quick web search before the debate starts to understand ambiguous topics. "Is it worth paying for X Premium?" now correctly generates a social media debate instead of generic SaaS advice.
 - **Model memory unload** — GPU memory freed when simulation queue is empty (~5-6 GB returned on completion)
