@@ -42,7 +42,7 @@ Manwe runs Qwen3 locally via MLX on Apple Silicon. Download a model during onboa
 |-------|------|-------------|
 | Qwen3 8B | Local | 16GB RAM, ~5GB download |
 | Qwen3.5 9B | Local | 16GB+ RAM, ~5.5GB download |
-| Claude Haiku / Sonnet / Opus | Cloud | Claude Code CLI + subscription |
+| Claude Sonnet / Opus | Cloud | Claude Code CLI + subscription |
 
 ## What makes it different
 
