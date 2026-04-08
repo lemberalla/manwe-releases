@@ -17,6 +17,8 @@
 
 Describe a decision or question. Manwe searches PubMed, arXiv, Semantic Scholar, and 10 other real sources, assembles a panel of AI advisors with diverse perspectives, and runs a multi-round debate. You get a structured report with predictions, confidence scores, evidence, risks, and a concrete action plan. Not a chat response.
 
+Your advisors are alive. They remember past debates, develop worldviews over time, and transform when genuinely challenged. Between simulations, they react to real-world knowledge in their domain — leave the app open and they grow.
+
 <p align="center">
   <img src="assets/screenshot-1.png" width="100%" alt="The Panel — advisors debating with unique perspectives">
 </p>
@@ -36,22 +38,26 @@ Describe a decision or question. Manwe searches PubMed, arXiv, Semantic Scholar,
 
 No API keys. No cloud. No data leaves your device.
 
-Manwe runs Qwen3 locally via MLX on Apple Silicon. Download a model during onboarding and everything stays on your machine. For a massive quality leap, connect Claude via Claude Code CLI — uses your existing subscription.
+Manwe runs Qwen locally via MLX on Apple Silicon. Download a model during onboarding and everything stays on your machine. For a massive quality leap, connect Claude via Claude Code CLI — uses your existing subscription.
 
-| Model | Type | Requirements |
-|-------|------|-------------|
-| Qwen3 8B | Local | 16GB RAM, ~5GB download |
-| Qwen3.5 9B | Local | 16GB+ RAM, ~5.5GB download |
-| Claude Sonnet / Opus | Cloud | Claude Code CLI + subscription |
+| Model | Tier | Type | Requirements |
+|-------|------|------|-------------|
+| Qwen3 8B | Standard | Local | 16GB RAM, ~5GB download |
+| Qwen3.5 9B | Pro | Local | 24GB+ RAM, ~5.5GB download |
+| Qwen3.5 35B MoE | Ultra | Local | 36GB+ RAM, ~19GB download |
+| Claude Sonnet / Opus | Cloud | API | Claude Code CLI + subscription |
 
 ## What makes it different
 
 - **Real research, not vibes** — searches 13 sources (PubMed, Semantic Scholar, arXiv, OpenAlex, CORE, Wikipedia, BLS, GDELT, DuckDuckGo, Hacker News, Stack Exchange, ClinicalTrials.gov, DOAJ) before the debate starts
 - **Advisors who actually disagree** — the panel includes perspectives that challenge consensus, not just agree with each other
+- **Living agents** — advisors develop worldviews, accumulate experience across simulations, and react to real-world knowledge between debates
+- **Personalized evidence** — each advisor reads research ranked by relevance to their specific expertise
 - **Guest experts** — Manwe detects knowledge gaps and recruits specialists on the fly
+- **Claim verification** — when agents cite statistics, the system auto-searches and regenerates with real evidence
 - **You're in the room** — inject events mid-debate, interview individual agents after
-- **Source-grounded** — claims are checked against research, not generated from vibes
 - **Continue chains** — follow up on any completed simulation with new questions
+- **Foundation Models** — Apple's Neural Engine handles research tasks while the GPU runs debates
 
 ## Install
 
