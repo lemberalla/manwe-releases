@@ -36,19 +36,24 @@ Your advisors are alive. They remember past debates, develop worldviews over tim
 
 ## Runs on your Mac
 
-No API keys. No cloud. No data leaves your device.
+Runs locally on Apple Silicon. Or connect your cloud provider. Your choice.
 
-Manwe runs Qwen locally via MLX on Apple Silicon. Download a model during onboarding and everything stays on your machine. For a massive quality leap, connect Claude via Claude Code CLI — uses your existing subscription.
+Manwe runs Qwen locally via MLX — no API keys, no data leaving your device. For a quality leap, connect Claude, Codex, or any OpenAI-compatible API. Bring your own key, bring your own model.
 
 | Model | Tier | Type | Requirements |
 |-------|------|------|-------------|
-| Qwen3 8B | Standard | Local | 16GB RAM, ~5GB download |
-| Qwen3.5 9B | Pro | Local | 24GB+ RAM, ~5.5GB download |
+| Qwen3 8B | Standard | Local | 8GB+ RAM, ~5GB download |
+| Qwen3.5 9B | Pro | Local | 16GB+ RAM, ~5.5GB download |
 | Qwen3.5 35B MoE | Ultra | Local | 36GB+ RAM, ~19GB download |
-| Claude Sonnet / Opus | Cloud | API | Claude Code CLI + subscription |
+| Claude Sonnet / Opus | Cloud | CLI | Claude Code CLI + subscription |
+| Codex (GPT) | Cloud | CLI | Codex CLI + ChatGPT/OpenAI subscription |
+| Qwen 3.6 Cloud | Cloud | CLI | Qwen Code CLI + authentication |
+| Anthropic / OpenAI / Alibaba API | Cloud | API Key | Your own API key |
+| OpenRouter, Groq, Together, Ollama... | Cloud | Custom | Any OpenAI-compatible endpoint |
 
 ## What makes it different
 
+- **Your data, their debate** — upload documents (PDF, TXT, MD) and every advisor sees your facts. The Auditor fact-checks claims against your actual data, not just web search.
 - **Real research, not vibes** — searches 13 sources (PubMed, Semantic Scholar, arXiv, OpenAlex, CORE, Wikipedia, BLS, GDELT, DuckDuckGo, Hacker News, Stack Exchange, ClinicalTrials.gov, DOAJ) before the debate starts
 - **Advisors who actually disagree** — the panel includes perspectives that challenge consensus, not just agree with each other
 - **Living agents** — advisors develop worldviews, accumulate experience across simulations, and react to real-world knowledge between debates
