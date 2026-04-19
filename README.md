@@ -32,7 +32,7 @@ Your advisors are alive. They remember past debates, develop worldviews over tim
 - "Should I leave my job to start a company? I'm 32, earning $140K, with 3 paying customers."
 - "Will Bitcoin hit $200K by end of 2026?"
 - "My doctor recommended a Whipple procedure — what are the risks and alternatives?"
-- "Turkey is mass-producing stealth fighters. What does this mean for NATO by 2030?"
+- "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?"
 
 ## Runs on your Mac
 
