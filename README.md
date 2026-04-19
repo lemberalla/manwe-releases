@@ -2,29 +2,29 @@
   <img src="assets/manwe-icon-beta.webp" width="128" height="128" alt="Manwe">
 </p>
 
-<h1 align="center">Not one AI opinion — six experts arguing with citations.</h1>
+<h1 align="center">AI doesn't need better answers. It needs better disagreement.</h1>
 
 <p align="center">
-  <strong>Manwe</strong> is a swarm intelligence engine for macOS.<br>
-  Describe a decision. Get a debate. Receive predictions with confidence scores.
+  <strong>Manwe</strong> is a decision room for macOS.<br>
+  Describe a decision. Get a debate. Receive an auditable decision record.
 </p>
 
 <p align="center">
-  <a href="https://github.com/lemberalla/manwe-releases/releases/latest"><strong>Download the Beta</strong></a> · <a href="https://discord.gg/Nz6RExEpSD">Join the Discord</a> · <a href="https://tinythings.app/manwe">Website</a>
+  <a href="https://github.com/lemberalla/manwe-releases/releases/latest"><strong>Download the Beta</strong></a> · <a href="https://discord.gg/Nz6RExEpSD">Join the Discord</a> · <a href="https://askmanwe.com">Website</a>
 </p>
 
 ---
 
-Describe a decision or question. Manwe searches PubMed, arXiv, Semantic Scholar, and 10 other real sources, assembles a panel of AI advisors with diverse perspectives, and runs a multi-round debate. You get a structured report with predictions, confidence scores, evidence, risks, and a concrete action plan. Not a chat response.
+Describe a decision or question. Manwe searches PubMed, arXiv, Semantic Scholar, and 10 other real sources, assembles a panel of AI advisors with diverse perspectives, and runs a multi-round debate. You get a structured decision record with predictions, confidence scores, evidence, risks, and a concrete action plan. Not a chat response.
 
-Your advisors are alive. They remember past debates, develop worldviews over time, and transform when genuinely challenged. Between simulations, they react to real-world knowledge in their domain — leave the app open and they grow.
+Your advisors are alive. They remember past debates, develop worldviews over time, and transform when genuinely challenged. Between runs, they react to real-world knowledge in their domain — leave the app open and they grow.
 
 <p align="center">
   <img src="assets/screenshot-1.png" width="100%" alt="The Panel — advisors debating with unique perspectives">
 </p>
 
 <p align="center">
-  <img src="assets/screenshot-2.png" width="100%" alt="Structured report with predictions and confidence scores">
+  <img src="assets/screenshot-2.png" width="100%" alt="Structured decision record with predictions and confidence scores">
 </p>
 
 ## Try asking
@@ -44,6 +44,7 @@ Manwe runs Qwen locally via MLX — no API keys, no data leaving your device. Fo
 |-------|------|------|-------------|
 | Qwen3 8B | Standard | Local | 8GB+ RAM, ~5GB download |
 | Qwen3.5 9B | Pro | Local | 16GB+ RAM, ~5.5GB download |
+| Qwen3.6 35B MoE | Ultra | Local | 36GB+ RAM, ~19GB download |
 | Qwen3.5 35B MoE | Ultra | Local | 36GB+ RAM, ~19GB download |
 | Claude Sonnet / Opus | Cloud | CLI | Claude Code CLI + subscription |
 | Codex (GPT) | Cloud | CLI | Codex CLI + ChatGPT/OpenAI subscription |
@@ -53,15 +54,17 @@ Manwe runs Qwen locally via MLX — no API keys, no data leaving your device. Fo
 
 ## What makes it different
 
-- **Your data, their debate** — upload documents (PDF, TXT, MD) and every advisor sees your facts. The Auditor fact-checks claims against your actual data, not just web search.
+- **Chat first, run when ready** — talk a decision through, invite up to 3 advisors from your pool, then hit Run when you want a structured debate
+- **Reasoning control** — pick how hard each model thinks. Low to Max, per model, for Claude, Codex, and API backends
+- **Your data, their debate** — upload documents (PDF, TXT, MD) and every advisor sees your facts. The Auditor fact-checks claims against your actual data, not just web search
 - **Real research, not vibes** — searches 13 sources (PubMed, Semantic Scholar, arXiv, OpenAlex, CORE, Wikipedia, BLS, GDELT, DuckDuckGo, Hacker News, Stack Exchange, ClinicalTrials.gov, DOAJ) before the debate starts
-- **Advisors who actually disagree** — the panel includes perspectives that challenge consensus, not just agree with each other
-- **Living agents** — advisors develop worldviews, accumulate experience across simulations, and react to real-world knowledge between debates
+- **Advisors who actually disagree** — the panel always includes a Contrarian (challenges consensus) and an Auditor (fact-checks claims)
+- **Living agents** — advisors develop worldviews, accumulate experience across runs, and react to real-world knowledge between debates
 - **Personalized evidence** — each advisor reads research ranked by relevance to their specific expertise
 - **Guest experts** — Manwe detects knowledge gaps and recruits specialists on the fly
 - **Claim verification** — when agents cite statistics, the system auto-searches and regenerates with real evidence
-- **You're in the room** — inject events mid-debate, interview individual agents after
-- **Continue chains** — follow up on any completed simulation with new questions
+- **You're in the room** — inject events mid-debate, interview individual advisors after
+- **Continue chains** — follow up on any completed decision record with new questions
 - **Foundation Models** — Apple's Neural Engine handles research tasks while the GPU runs debates
 
 ## Install
@@ -80,7 +83,7 @@ See [**Releases**](https://github.com/lemberalla/manwe-releases/releases) for th
 
 This is a beta. Things will break.
 
-**[Join the Discord](https://discord.gg/Nz6RExEpSD)** — bug reports, feature ideas, or just share your wildest simulation reports.
+**[Join the Discord](https://discord.gg/Nz6RExEpSD)** — bug reports, feature ideas, or just share your wildest decision records.
 
 ---
 
