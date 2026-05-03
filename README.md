@@ -15,7 +15,7 @@
 
 ---
 
-Describe a decision or question. Manwe searches PubMed, arXiv, Semantic Scholar, and 10 other real sources, assembles a panel of AI advisors with diverse perspectives, and runs a multi-round debate. You get a structured decision record with predictions, confidence scores, evidence, risks, and a concrete action plan. Not a chat response.
+Describe a decision or question. Manwe searches 30+ source and evidence surfaces, assembles a panel of AI advisors with diverse perspectives, and runs a multi-round debate. You get a structured decision record with predictions, confidence scores, evidence, risks, and a concrete action plan. Not a chat response.
 
 Your advisors are alive. They remember past debates, develop worldviews over time, and transform when genuinely challenged. Between runs, they react to real-world knowledge in their domain — leave the app open and they grow.
 
@@ -55,9 +55,12 @@ Manwe runs Qwen locally via MLX — no API keys, no data leaving your device. Fo
 ## What makes it different
 
 - **Chat first, run when ready** — talk a decision through, invite up to 3 advisors from your pool, then hit Run when you want a structured debate
+- **Market Intelligence** — market-aware runs connect fresh signals, filings, earnings context, price/volume history, and source-backed catalysts
+- **Event Radar** — scan markets, companies, technology, policy, health, climate, geopolitics, and culture before deciding whether to run a full debate
+- **Computed evidence cards** — timing context, earnings checks, market screens, and deeper evidence summaries open as inspectable cards
 - **Reasoning control** — pick how hard each model thinks. Low to Max, per model, for Claude, Codex, and API backends
 - **Your data, their debate** — upload documents (PDF, TXT, MD) and every advisor sees your facts. The Auditor fact-checks claims against your actual data, not just web search
-- **Real research, not vibes** — searches 13 sources (PubMed, Semantic Scholar, arXiv, OpenAlex, CORE, Wikipedia, BLS, GDELT, DuckDuckGo, Hacker News, Stack Exchange, ClinicalTrials.gov, DOAJ) before the debate starts
+- **Real research, not vibes** — searches scholarly, legal, government, market, software, health, macro, and public-record sources before the debate starts
 - **Advisors who actually disagree** — the panel always includes a Contrarian (challenges consensus) and an Auditor (fact-checks claims)
 - **Living agents** — advisors develop worldviews, accumulate experience across runs, and react to real-world knowledge between debates
 - **Personalized evidence** — each advisor reads research ranked by relevance to their specific expertise
@@ -66,6 +69,7 @@ Manwe runs Qwen locally via MLX — no API keys, no data leaving your device. Fo
 - **You're in the room** — inject events mid-debate, interview individual advisors after
 - **Continue chains** — follow up on any completed decision record with new questions
 - **Foundation Models** — Apple's Neural Engine handles research tasks while the GPU runs debates
+- **Ask Manwe Web** — sign in at app.askmanwe.com for Quick and Pro web runs, saved records, source inspection, and usage controls
 
 ## Install
 
