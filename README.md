@@ -1,96 +1,79 @@
 <p align="center">
-  <img src="assets/manwe-icon-beta.webp" width="128" height="128" alt="Manwe">
+  <img src="assets/manwe-icon-beta.webp" width="96" height="96" alt="Manwe">
 </p>
 
-<h1 align="center">AI doesn't need better answers. It needs better disagreement.</h1>
+<h1 align="center">Manwe</h1>
 
 <p align="center">
-  <strong>Manwe</strong> is a decision room for macOS.<br>
-  Describe a decision. Get a debate. Receive an auditable decision record.
+  <strong>An AI workspace that learns how you work.</strong><br>
+  Your context, models and tools, together on your Mac.
 </p>
 
 <p align="center">
-  <a href="https://github.com/lemberalla/manwe-releases/releases/latest"><strong>Download the Beta</strong></a> · <a href="https://discord.gg/Nz6RExEpSD">Join the Discord</a> · <a href="https://askmanwe.com">Website</a>
+  <a href="https://github.com/lemberalla/manwe-releases/releases/latest"><strong>Download for Mac</strong></a> ·
+  <a href="https://askmanwe.com/handbook/">Handbook</a> ·
+  <a href="https://askmanwe.com">Website</a> ·
+  <a href="https://discord.gg/e7q8AfXkx">Discord</a>
 </p>
 
 ---
 
-Describe a decision or question. Manwe searches 30+ source and evidence surfaces, assembles a panel of AI advisors with diverse perspectives, and runs a multi-round debate. You get a structured decision record with predictions, confidence scores, evidence, risks, and a concrete action plan. Not a chat response.
+Research a question, work with an advisor, review a repository, or create something with your files and connected apps. Manwe keeps useful context so you can return to the work and continue with a different model when you need to.
 
-Your advisors are alive. They remember past debates, develop worldviews over time, and transform when genuinely challenged. Between runs, they react to real-world knowledge in their domain — leave the app open and they grow.
+This repository hosts the signed Mac installers and release notes. Start with the [handbook](https://askmanwe.com/handbook/) for setup and practical examples.
 
-<p align="center">
-  <img src="assets/screenshot-1.png" width="100%" alt="The Panel — advisors debating with unique perspectives">
-</p>
+## What you can do
 
-<p align="center">
-  <img src="assets/screenshot-2.png" width="100%" alt="Structured decision record with predictions and confidence scores">
-</p>
+| | |
+|---|---|
+| **Worlds and memory** | Give projects and areas of life their own context. Keep goals, constraints and relationships together, with personal preferences in their own place. Inspect retained knowledge in the memory map. |
+| **Learning from feedback** | Small on-device neural classifiers learn patterns from retained corrections and choices. Review, undo or set aside memory, and control automatic remembering and learning. |
+| **Persistent advisors** | Return to specialists with their own instructions, model choices and retained lessons. Work with one, ask for second opinions, or bring a team together. |
+| **Research and Deep Review** | Investigate a topic with sources and relevant World context. Review code in a selected repository, inspect evidence and save useful findings even when questions remain open. |
+| **Files, browser and apps** | Read and edit granted files, use terminal commands and connected tools, and create documents, spreadsheets, presentations and interactive results. |
+| **Developer tools** | Search large repositories, use editor context from VS Code, Cursor or Xcode, and run work in a local Docker container when configured. |
+| **Repeatable work** | Keep methods as skills, save tasks as workflows, run them on demand or on a schedule, and watch for changes. |
+| **Saved work and sharing** | Reopen generated files and retained versions. Export reports as PDF, HTML or slides, or share pages served from your awake Mac. |
 
-## Try asking
+## Install or update
 
-- "Should I leave my job to start a company? I'm 32, earning $140K, with 3 paying customers."
-- "Will Bitcoin hit $200K by end of 2026?"
-- "My doctor recommended a Whipple procedure — what are the risks and alternatives?"
-- "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?"
+1. Download the DMG from the [latest release](https://github.com/lemberalla/manwe-releases/releases/latest).
+2. Quit Manwe if it is running, open the DMG and drag Manwe into Applications. Choose Replace when updating.
+3. Open Manwe. On a fresh install, onboarding helps you choose a model and set up your context.
 
-## Runs on your Mac
+Manwe is Developer ID signed and notarized by Apple. Published downloads include a `SHA256SUMS` file for checking the installer.
 
-Runs locally on Apple Silicon. Or connect your cloud provider. Your choice.
+**Already using 0.9.9 or later?** Use **Check for Updates…** in the profile menu or **Settings → General**. With automatic update checks enabled, an update indicator appears when a newer version is available.
 
-Manwe runs Qwen locally via MLX — no API keys, no data leaving your device. For a quality leap, connect Claude, Codex, or any OpenAI-compatible API. Bring your own key, bring your own model.
+**Updating from 0.9.7?** Manwe creates a recovery archive before upgrading your existing data. Conversations, reports, Worlds and promoted memory are preserved. The legacy reusable advisor roster is reset, and you choose your model and complete onboarding again. To roll back, follow the instructions in the archive; do not open upgraded data with 0.9.7.
 
-| Model | Tier | Type | Requirements |
-|-------|------|------|-------------|
-| Qwen3 8B | Standard | Local | 8GB+ RAM, ~5GB download |
-| Qwen3.5 9B | Pro | Local | 16GB+ RAM, ~5.5GB download |
-| Qwen3.6 35B MoE | Ultra | Local | 36GB+ RAM, ~19GB download |
-| Qwen3.5 35B MoE | Ultra | Local | 36GB+ RAM, ~19GB download |
-| Claude Sonnet / Opus | Cloud | CLI | Claude Code CLI + subscription |
-| Codex (GPT) | Cloud | CLI | Codex CLI + ChatGPT/OpenAI subscription |
-| Qwen 3.6 Cloud | Cloud | CLI | Qwen Code CLI + authentication |
-| Anthropic / OpenAI / Alibaba API | Cloud | API Key | Your own API key |
-| OpenRouter, Groq, Together, Ollama... | Cloud | Custom | Any OpenAI-compatible endpoint |
+## Models and requirements
 
-## What makes it different
+Requires an **Apple Silicon Mac (M1 or later) running macOS 14 or later**. Local models need a separate download and enough memory for the chosen model.
 
-- **Chat first, run when ready** — talk a decision through, invite up to 3 advisors from your pool, then hit Run when you want a structured debate
-- **Market Intelligence** — market-aware runs connect fresh signals, filings, earnings context, price/volume history, and source-backed catalysts
-- **Event Radar** — scan markets, companies, technology, policy, health, climate, geopolitics, and culture before deciding whether to run a full debate
-- **Computed evidence cards** — timing context, earnings checks, market screens, and deeper evidence summaries open as inspectable cards
-- **Reasoning control** — pick how hard each model thinks. Low to Max, per model, for Claude, Codex, and API backends
-- **Your data, their debate** — upload documents (PDF, TXT, MD) and every advisor sees your facts. The Auditor fact-checks claims against your actual data, not just web search
-- **Real research, not vibes** — searches scholarly, legal, government, market, software, health, macro, and public-record sources before the debate starts
-- **Advisors who actually disagree** — the panel always includes a Contrarian (challenges consensus) and an Auditor (fact-checks claims)
-- **Living agents** — advisors develop worldviews, accumulate experience across runs, and react to real-world knowledge between debates
-- **Personalized evidence** — each advisor reads research ranked by relevance to their specific expertise
-- **Guest experts** — Manwe detects knowledge gaps and recruits specialists on the fly
-- **Claim verification** — when agents cite statistics, the system auto-searches and regenerates with real evidence
-- **You're in the room** — inject events mid-debate, interview individual advisors after
-- **Continue chains** — follow up on any completed decision record with new questions
-- **Foundation Models** — Apple's Neural Engine handles research tasks while the GPU runs debates
-- **Ask Manwe Web** — sign in at app.askmanwe.com for Quick and Pro web runs, saved records, source inspection, and usage controls
+- **Local models:** Gemma 4 E4B is the recommended responsive option. Larger Gemma and Qwen options are experimental. You can also link supported installed MLX models or connect a separately running OpenAI-compatible local server.
+- **Model subscriptions:** use supported Codex and Claude Code connections through your configured local sign-in.
+- **API providers:** connect your own supported provider or compatible endpoint and API key.
 
-## Install
+Your Worlds and conversation history stay in Manwe when you switch models. Local model inference runs on your Mac. Cloud inference and connected services receive the context needed for the work you send to them; web research also uses online services. Manwe is not entirely offline. See the [privacy policy](https://askmanwe.com/privacy/).
 
-1. Download the latest DMG from [**Releases**](https://github.com/lemberalla/manwe-releases/releases/latest)
-2. Open the DMG and drag Manwe to Applications
-3. Launch — onboarding guides you through model setup
+Some local intelligence features require a newer macOS version. VS Code and Cursor context require Manwe’s editor extension; Xcode context requires Accessibility permission. Container execution requires a running local Docker Desktop engine. Individual Apple app integrations request their respective macOS permissions.
 
-**Requires macOS 14.0+ and Apple Silicon (M1 or later).**
+## Background work
 
-## Changelog
+With the optional background helper enabled in Manwe and approved in macOS, supported scheduled workflows and watches can run after you quit the app while your Mac is awake. Local-model work waits until Manwe is open.
 
-See [**Releases**](https://github.com/lemberalla/manwe-releases/releases) for the full version history.
+Advisor background learning runs while Manwe is open, idle and online, within the learning allowances you configure.
 
-## Feedback
+## Start here
 
-This is a beta. Things will break.
+- [Read the handbook](https://askmanwe.com/handbook/) or [download the PDF](https://askmanwe.com/downloads/manwe-handbook-0.9.9.pdf).
+- [See how Manwe works](https://askmanwe.com/how-it-works/) and [explore use cases](https://askmanwe.com/use-cases/).
+- [Read release notes and version history](https://github.com/lemberalla/manwe-releases/releases).
+- [Join Discord](https://discord.gg/e7q8AfXkx) or email [hello@askmanwe.com](mailto:hello@askmanwe.com) for feedback.
 
-**[Join the Discord](https://discord.gg/Nz6RExEpSD)** — bug reports, feature ideas, or just share your wildest decision records.
+The [web app](https://app.askmanwe.com/) remains available separately from the Mac workspace.
 
 ---
 
-<p align="center">
-  Made by Oncel Cebeci · <a href="https://tinythings.app">a tiny things app</a>
-</p>
+Made by Oncel Cebeci · [Tiny Things](https://tinythings.app)
