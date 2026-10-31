@@ -43,7 +43,7 @@ This repository hosts the signed Mac installers and release notes. Start with th
 
 Manwe is Developer ID signed and notarized by Apple. Published downloads include a `SHA256SUMS` file for checking the installer.
 
-**Already using 0.9.9 or later?** Use **Check for Updates…** in the profile menu or **Settings → General**. With automatic update checks enabled, an update indicator appears when a newer version is available.
+**Already using 0.9.9 or later?** Use **Check for Updates…** in the profile menu or **Settings → General**. With automatic update checks enabled, an update indicator appears when a newer version is available. In 0.9.92 and later, the update button appears above your profile.
 
 **Updating from 0.9.7?** Manwe creates a recovery archive before upgrading your existing data. Conversations, reports, Worlds and promoted memory are preserved. The legacy reusable advisor roster is reset, and you choose your model and complete onboarding again. To roll back, follow the instructions in the archive; do not open upgraded data with 0.9.7.
 
